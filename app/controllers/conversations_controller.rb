@@ -15,6 +15,8 @@ class ConversationsController < ApplicationController
     @reciever = interlocutor(@conversation)
     @messages = @conversation.messages
     @message = Message.new
+    
+    render json: { conversation: @conversation }
   end
  
   private

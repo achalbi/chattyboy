@@ -1,5 +1,4 @@
 class Conversation < ActiveRecord::Base
-  attr_accessible :sender_id, :recipient_id
 
   has_many :messages, dependent: :destroy
  
